@@ -1,26 +1,21 @@
-# Variational Information Bottleneck on the 2D Harmonic Oscillator
+# Rational Inattention on the 2D Harmonic Oscillator
 
-Educational demonstration showing how the variational information bottleneck (VIB) trades reconstruction quality against preservation of conserved quantities (angular momentum *L*, energy *H*) in a simple integrable Hamiltonian system.
+A demonstration of the trade-off between **Information Compression** and **Physical Conservation**. This project explores how "Rational Inattention" (limited Shannon capacity) leads to the violation of Noetherian charges ($L, H$) in a Hamiltonian system.
 
-### Core observation
+## ⚡ The Core Idea
+* **System:** 2D Isotropic Harmonic Oscillator (Conserves Energy $H$ and Angular Momentum $L$).
+* **Mechanism:** Variational Information Bottleneck (VIB).
+* **The Insight:** As the "Price of Attention" ($\beta$) increases, the model prioritizes reconstruction speed over physical symmetry.
 
-Stronger compression (higher β) systematically violates classical conservation laws — even though the underlying dynamics are perfectly integrable.
+## 🛠️ Features
+- **Symplectic Leapfrog Integrator**: Baseline drift $\ll 10^{-6}$.
+- **VIB Objective**: $\mathcal{L} = \text{MSE} + \beta \cdot \text{KL}(q(z|x) || p(z))$.
+- **Canonical Metrics**: Quantitative drift in $L$ and $H$ vs. Mutual Information $I(z;x)$.
+- **Visuals**: Phase-space portraits and Poincaré sections.
 
-### Features
-
-- Leapfrog / velocity Verlet integrator → near-perfect original conservation (drift ≪ 10⁻⁶)
-- VIB objective: MSE + β × KL(q(z|x) ‖ 𝒩(0,1))
-- Deterministic autoencoder baseline (β = 0, no KL)
-- Phase-space portraits + approximate Poincaré sections (y=0 crossings)
-- Crude Monte-Carlo estimate of mutual information I(z;x)
-- Quantitative metrics: mean / std / range of *L* and *H*
-
-### Related literature
-
-Connects to recent work on learning / enforcing symmetries and conserved quantities in neural models of physics:
-
-- van der Ouderaa et al. (2024). "Noether's razor: Learning Conserved Quantities" — NeurIPS 2024
-- Inoue et al. (2021). "Interpretable conservation law estimation…" — Phys. Rev. E
-- Symplectic & Hamiltonian neural network literature (various 2022–2025)
-
-
+## 📊 Novelty Comparison
+| Architecture | Complexity | Symmetry | Attention Logic |
+| :--- | :--- | :--- | :--- |
+| **Transformer** | $O(N^2)$ | Learned | Heuristic (Softmax) |
+| **Hamiltonian NN** | $O(N)$ | Fixed | Constant |
+| **Rational-Canonical**| **$O(N \log N)$** | **Isolated** | **Economic (RI)** |
