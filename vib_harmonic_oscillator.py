@@ -2,14 +2,6 @@
 Variational Information Bottleneck – 2D Harmonic Oscillator
 Educational demo: compression vs. conservation trade-off in Hamiltonian systems
 
-Features:
-- Leapfrog (symplectic) integration → near-perfect original L & H conservation
-- VIB objective: MSE + β × KL(q(z|x) || N(0,1))
-- Deterministic AE baseline
-- Phase-space portraits + Poincaré sections (y=0 crossings)
-- Crude Monte-Carlo I(z;x) estimate
-- Clean, minimal, reproducible
-
 MIT License – educational purpose – February 2026
 """
 
