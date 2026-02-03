@@ -2,10 +2,10 @@
 
 A demonstration of the trade-off between **Information Compression** and **Physical Conservation**. 
 This project explores how "Rational Inattention" (limited Shannon capacity) leads to the violation of Noetherian charges ($L, H$) in a Hamiltonian system.
-This work bridges information theory and physics‑informed learning by explicitly measuring how mutual information constraints affect the preservation of symmetries and conservation laws — a connection not previously quantified in the literature.
+This work bridges information theory and physics‑informed learning by explicitly measuring how mutual information constraints affect the preservation of symmetries and conservation laws.
 
 ## Core
-* **System:** 2D Isotropic Harmonic Oscillator (Conserves Energy $H$ and Angular Momentum $L$).
+* **System:** 2D Isotropic Harmonic Oscillator (Conserves Energy $H$ and Angular Momentum $L$).s
 * **Mechanism:** Variational Information Bottleneck (VIB).
 * **The Insight:** As the "Price of Attention" ($\beta$) increases, the model prioritizes reconstruction speed over physical symmetry.
 
