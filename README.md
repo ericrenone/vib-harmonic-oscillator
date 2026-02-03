@@ -15,7 +15,7 @@ This work bridges information theory and physics‑informed learning by explicit
 - **Canonical Metrics**: Quantitative drift in $L$ and $H$ vs. Mutual Information $I(z;x)$.
 - **Visuals**: Phase-space portraits and Poincaré sections.
 
-## 📊 Novelty Comparison
+## 📊 Comparison
 | Architecture | Complexity | Symmetry | Attention Logic |
 | :--- | :--- | :--- | :--- |
 | **Transformer** | $O(N^2)$ | Learned | Heuristic (Softmax) |
