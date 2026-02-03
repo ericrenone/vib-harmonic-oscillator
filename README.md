@@ -1,6 +1,7 @@
 # Rational Inattention on the 2D Harmonic Oscillator
 
-A demonstration of the trade-off between **Information Compression** and **Physical Conservation**. This project explores how "Rational Inattention" (limited Shannon capacity) leads to the violation of Noetherian charges ($L, H$) in a Hamiltonian system.
+A demonstration of the trade-off between **Information Compression** and **Physical Conservation**. 
+This project explores how "Rational Inattention" (limited Shannon capacity) leads to the violation of Noetherian charges ($L, H$) in a Hamiltonian system.
 
 ## ⚡ The Core Idea
 * **System:** 2D Isotropic Harmonic Oscillator (Conserves Energy $H$ and Angular Momentum $L$).
