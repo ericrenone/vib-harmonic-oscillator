@@ -1,5 +1,7 @@
 # How an information-theoretic bottleneck affects the preservation of physical symmetries.
 
+Information-theoretic latent models (like VIB) can learn physically meaningful representations of dynamical systems without violating key conservation laws, and we can observe this live as the model learns.
+
 A demonstration of the trade-off between **Information Compression** and **Physical Conservation**. 
 This project explores how "Rational Inattention" (limited Shannon capacity) leads to the violation of Noetherian charges ($L, H$) in a Hamiltonian system.
 This work bridges information theory and physics‑informed learning by explicitly measuring how mutual information constraints affect the preservation of symmetries and conservation laws.
