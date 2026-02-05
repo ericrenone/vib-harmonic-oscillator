@@ -21,3 +21,5 @@ The model learns to compress high-dimensional physics trajectories while preserv
 | **Real-Time Tracking**      | Live matplotlib visualization of trajectory, latent space, and metrics. |
 | **Conservation Monitoring** | Tracks angular momentum error during training.                             |
 
+
+The circle is a direct consequence of conserving angular momentum in an isotropic harmonic potential.
